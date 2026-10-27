@@ -9,23 +9,19 @@ Features
 ✅ Native macOS - Built with Swift for Apple Silicon
 ✅ Process Hollowing Support - Inject into legitimate processes
 Architecture
-┌─────────────────────────────────────────────────────────────┐
+
 │                    Encrypted Payload                         │
 │  [16-byte Header] [AES-256 Encrypted Code] [IV + Tag]       │
-└─────────────────────────────────────────────────────────────┘
-                          ↓
-┌─────────────────────────────────────────────────────────────┐
+
 │              Runtime Decryption (AES-256-GCM)                 │
 │  - Decrypts in memory using AESCrypter                       │
 │  - Never writes decrypted code to disk                       │
-└─────────────────────────────────────────────────────────────┘
-                          ↓
-┌─────────────────────────────────────────────────────────────┐
+
 │              Memory Execution (Process Hollowing)             │
 │  - Injects into legitimate process (Safari, Finder, etc.)    │
 │  - Executes code in process memory                           │
 │  - Uses RunPE technique for stealth                          │
-└─────────────────────────────────────────────────────────────┘
+
 Installation
 cd crypter-macos
 swift build
