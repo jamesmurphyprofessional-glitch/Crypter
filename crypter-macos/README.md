@@ -162,15 +162,3 @@ swift build -arch arm64 -arch x86_64
 
 MIT License - See LICENSE file
 
-## Author
-
-MAC Crypter Team
-
----
-
-**Note**: This is a demonstration crypter. For production use, consider adding:
-- Anti-debugging detection
-- Anti-VM detection
-- Memory protection
-- Key rotation
-- Encrypted key storage
