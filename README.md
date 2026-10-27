@@ -111,11 +111,3 @@ MIT License - See LICENSE file
 
 Author
 JamesMurphyProfessional-Glitch
-
-Note: This is a demonstration crypter. For production use, consider adding:
-
-Anti-debugging detection
-Anti-VM detection
-Memory protection
-Key rotation
-Encrypted key storage
